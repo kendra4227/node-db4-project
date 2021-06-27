@@ -5,7 +5,6 @@ const sharedConfig = {
     pool:{afterCreate: (conn,done)=> conn.run('PRAGMA foreign_key =ON',done)}
 }
 
-
 module.exports = {
     development : {
         ...sharedConfig,
